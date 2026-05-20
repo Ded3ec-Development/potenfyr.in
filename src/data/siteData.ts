@@ -100,7 +100,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'Discord',
-    url: 'https://discord.gg/potenfyr',
+    url: 'https://discord.gg/zUaN2FPBec',
     icon: MessageCircle,
     color: '#5865F2',
   },

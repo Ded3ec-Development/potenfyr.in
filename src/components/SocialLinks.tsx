@@ -91,7 +91,7 @@ export default function SocialLinks() {
           </Parallax>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
           {socialLinks.map((link, i) => (
             <SocialCard key={link.name} link={link} index={i} />
           ))}

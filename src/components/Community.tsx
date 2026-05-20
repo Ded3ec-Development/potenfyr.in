@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Parallax } from 'react-scroll-parallax';
-import { MessageCircle, Users, Hash, Sparkles, ExternalLink } from 'lucide-react';
+import { MessageCircle, Users, ExternalLink } from 'lucide-react';
 
 export default function Community() {
   const [ref, inView] = useInView({
@@ -53,16 +53,15 @@ export default function Community() {
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="relative rounded-3xl border border-white/[0.06] bg-[#111111] backdrop-blur-md overflow-hidden"
+            className="relative rounded-3xl border border-white/[0.06] bg-[#111111] overflow-hidden"
           >
-            <div className="absolute -inset-px bg-gradient-to-br from-cyan-500/[0.08] to-white/[0.03] rounded-[2.5rem] -z-10" />
+            <div className="absolute -inset-px bg-gradient-to-br from-cyan-500/[0.08] to-white/[0.03] -z-10" />
 
             <div className="p-2">
               <div className="rounded-2xl overflow-hidden bg-[#0a0a0a] border border-white/[0.05]">
-                {/* Two-column Server Grid */}
                 <div className="grid lg:grid-cols-2 gap-px bg-white/[0.03]">
-                  
-                  {/* Community Server */}
+
+                  {/* ==================== COMMUNITY SERVER ==================== */}
                   <div className="flex flex-col">
                     <div className="flex items-center gap-3 px-6 py-4 border-b border-white/[0.08]">
                       <div className="flex items-center gap-1.5">
@@ -86,20 +85,22 @@ export default function Community() {
                         <p className="text-white/50 text-sm mt-1">Discussions • Updates • Development</p>
                       </div>
 
-                      <div className="flex-1 rounded-2xl overflow-hidden border border-white/[0.08] bg-black/60 mb-6 shadow-inner">
+                      {/* Widget Container - Improved Rounding */}
+                      <div className="flex-1 relative rounded-2xl overflow-hidden border border-white/[0.08] bg-black/70 mb-6 shadow-inner">
                         <iframe
                           src="https://discord.com/widget?id=1258462644332138700&theme=dark"
                           width="100%"
-                          height="480"
-                          allowTransparency="true"
+                          height="520"
+          
                           frameBorder="0"
                           sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                           className="w-full"
+                          style={{ borderRadius: '16px' }}
                         />
                       </div>
 
                       <a
-                        href="https://discord.gg/potenfyr"
+                        href="https://discord.gg/zUaN2FPBec"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group w-full inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-400/30 text-white font-medium rounded-2xl transition-all duration-300 hover:shadow-lg"
@@ -111,7 +112,7 @@ export default function Community() {
                     </div>
                   </div>
 
-                  {/* Support Server */}
+                  {/* ==================== SUPPORT SERVER ==================== */}
                   <div className="flex flex-col lg:border-l border-white/[0.08]">
                     <div className="flex items-center gap-3 px-6 py-4 border-b border-white/[0.08]">
                       <div className="flex items-center gap-1.5">
@@ -135,20 +136,22 @@ export default function Community() {
                         <p className="text-white/50 text-sm mt-1">Technical Help • Bug Reports • Tickets</p>
                       </div>
 
-                      <div className="flex-1 rounded-2xl overflow-hidden border border-white/[0.08] bg-black/60 mb-6 shadow-inner">
+                      {/* Widget Container - Improved Rounding */}
+                      <div className="flex-1 relative rounded-2xl overflow-hidden border border-white/[0.08] bg-black/70 mb-6 shadow-inner">
                         <iframe
                           src="https://discord.com/widget?id=1455889414407327840&theme=dark"
                           width="100%"
-                          height="480"
-                          allowTransparency="true"
+                          height="520"
+                     
                           frameBorder="0"
                           sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
                           className="w-full"
+                          style={{ borderRadius: '16px' }}
                         />
                       </div>
 
                       <a
-                        href="https://discord.gg/potenfyr-support" // ← Update if needed
+                        href="https://discord.gg/PRJASTKqwD" // Change this if you have a different invite link
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group w-full inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-400/30 text-white font-medium rounded-2xl transition-all duration-300 hover:shadow-lg"
@@ -166,7 +169,7 @@ export default function Community() {
         </Parallax>
 
         <p className="text-center text-white/40 text-xs mt-8 tracking-wider">
-          BOTH SERVERS ARE FREE • LIVE ACTIVITY SHOWN ABOVE
+          BOTH SERVERS ARE FREE TO JOIN • LIVE ACTIVITY SHOWN ABOVE
         </p>
       </div>
     </section>
