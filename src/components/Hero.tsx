@@ -2,6 +2,7 @@ import { useRef, useMemo } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Parallax } from 'react-scroll-parallax';
 import { ArrowRight, Users } from 'lucide-react';
+import DonateButton from './DonateButton';
 
 function GridBackground() {
   return (
@@ -190,7 +191,10 @@ export default function Hero() {
               <Users size={16} className="text-accent-cyan/60 group-hover:text-accent-cyan transition-colors duration-300" />
               Join Community
             </a>
+            <DonateButton />
           </motion.div>
+
+          
       </motion.div>
 
       <motion.div
