@@ -86,7 +86,7 @@ export const services: Service[] = [
   },
   {
     title: 'Future Hosting Solutions',
-    description: 'Cloud infrastructure and game server hosting — coming soon.',
+    description: 'Cloud infrastructure and game server hosting - coming soon.',
     icon: Cloud,
   },
 ];

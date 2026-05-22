@@ -95,7 +95,7 @@ export default function Services() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="mt-5 text-brand-silver/60 max-w-lg mx-auto font-light leading-[1.7]"
             >
-              From automation to infrastructure — everything we build is designed for scale.
+              From automation to infrastructure - everything we build is designed for scale.
             </motion.p>
           </Parallax>
         </div>

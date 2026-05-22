@@ -65,7 +65,7 @@ export default function About() {
               >
                 Potenfyr Studios is a technology-focused development studio built by
                 tech enthusiasts. We design and build modern tools, infrastructure,
-                and scalable systems across the Discord and Minecraft ecosystems —
+                and scalable systems across the Discord and Minecraft ecosystems -
                 with a focus on performance, reliability, and developer experience.
               </motion.p>
 

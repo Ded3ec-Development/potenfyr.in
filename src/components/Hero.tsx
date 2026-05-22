@@ -167,7 +167,7 @@ export default function Hero() {
             className="mt-8 text-base sm:text-lg md:text-xl text-brand-silver/80 max-w-2xl mx-auto leading-[1.7] font-light"
           >
             We develop modern tools, infrastructure, bots, plugins, mods, and
-            scalable systems — built by developers, for developers.
+            scalable systems - built by developers, for developers.
           </motion.p>
 
           <motion.div
